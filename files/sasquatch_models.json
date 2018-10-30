@@ -1,0 +1,102 @@
+///// POST project
+{
+    "text" : "text file from speechmatix in byte[]",
+    "categories": ["category a", "category b"],
+    "language": "engish",
+    "userId" : "a48b6932-774d-4fad-895a-6692f471503c"
+}
+
+///// GET project
+// - Before 2018/07/03:
+{
+    "projectId" : "27c62f4d-abea-4e69-b239-d083a0ae8555",
+    "score" : 78.98, // double
+    "videoLength": 327, // seconds
+    "subtitles": [{
+        "id": "A",
+        "score" : "99.12",
+        "start": "00:00:00.500",
+        "end" : "00:00:02.000",
+        "text" : "This is my subtile",
+        "region" : {"to_discussed_with_basex_later"}
+    }]
+}
+    
+// - After 2018/07/03:
+//   - subtitle.text -> array of line objects -> with individual words 
+{
+    "projectId" : "27c62f4d-abea-4e69-b239-d083a0ae8555",
+    "score" : 78.98, // double
+    "videoLength": 327, // seconds
+    "subtitles": [{
+        "id": "A",
+        "score" : 99.12,
+        "start": 1.02,
+        "end" : 5.97,
+        "lines" : [{
+            "id" : "Line-UUID"
+            "score" : 89.11,
+            "words" : [{
+              "id" : "Word-UUID",
+              "score" : 1, 
+              "start": 1.02,
+              "end" : 1.68,
+              "word" : "This"              
+            }]
+          }],
+        "region" : {"to_discussed_with_basex_later"}
+    }]
+}
+
+///// GET/PUT Subtitle
+// - Before 2018/07/03:
+{
+    "id": "A",
+    "score" : "99.12",
+    "start": "00:00:00.500",
+    "end" : "00:00:02.000",
+    "text" : "This is my subtile",
+    "region" : {"to_discussed_with_basex_later"}
+}
+
+
+// Object of "subtitles":[] 
+{
+  "id":"83243e11-281c-47d0-bf5d-f05186d47f9d",
+  "score":"100",
+  "start":"842.68",
+  "end":"843.01",
+  "lines":[
+    {
+      "id":"ccb7579e-aae5-471d-9240-64c57764da9f",
+      "score":100,
+      "words":[
+        {
+          "id":"d468d6b1-61d7-4203-b883-a9c37bd070cc",
+          "score":100,
+          "start":"842.68",
+          "end":"843.01",
+          "word":"world"
+        },
+        {
+          "id":"323d6461-071c-4ebf-9f09-0e0f20162762",
+          "score":100,
+          "start":"843.01",
+          "end":"843.01",
+          "word":"."
+        }
+      ]
+    }
+  ],
+  "region":"todo"
+}
+
+///// Region idea - but please do suggest alternatives/better ways to do this as you see fit.
+{
+    "id" : "C",
+    "width" : 12.1,
+    "lines" : 2,
+    "width": 10.34,
+    "anchor" : [8.12, 12.92],
+    "viewportAnchor" : [12.21,34.98]
+}

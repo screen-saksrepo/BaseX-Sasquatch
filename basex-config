@@ -1,0 +1,6 @@
+## This config deliberately sets the basex database folder to point to
+##                        /home/basex-data
+## as "the container app service can only persistently store the /home"-dir
+############################################################################
+# General Options
+DBPATH=/home/basex-data

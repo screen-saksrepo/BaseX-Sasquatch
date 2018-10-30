@@ -1,0 +1,997 @@
+swagger: '2.0'
+info:
+  description: >
+    # Introduction
+
+    The S2S API is built on HTTP.  Our API is RESTful.  It has predictable
+    resource URLs.  It returns HTTP response codes to indicate errors.  It also
+    accepts and returns JSON in the HTTP body.  You can use your favorite
+    HTTP/REST library for your programming language to use S2S's API.
+
+  version: '1.0'
+  title: Speech-to-Subtitle (S2S) REST API
+  termsOfService: 'https://subtitling.com'
+  contact:
+    name: Speech-to-Subtitle API Support
+    email: debug@basex.org
+  license:
+    name: Proprietary
+    url: 'https://subtitling.com'
+basePath: /v1
+externalDocs:
+  description: Discussions about speech-to-subtitle (S2S) within the sasquatch project
+  url: 'https://ijyi.visualstudio.com/Sasquatch'
+tags:
+  - name: projects
+    description: >-
+      A project is initialized by a speech-to-text (stt) input file.
+
+      stt-files are outputs of a speech-recognition engine, such as
+      Speechmatics.
+
+      Input of stt-files is represented in an intermediate representation within
+      S2S, which can be manipulated by various API calls (e.g., initiated by
+      user interactions in a web application).
+
+      Finally the output can be requested as WebVTT, EBU-TT, IMSC subtitle
+      formats and an internal IJYI JSON format (containing additional metadata).
+schemes:
+  - http
+paths:
+  /projects:
+    post:
+      tags:
+        - projects
+      summary: Create a project from a speech-to-text file
+      description: >
+        Creates a new project from a speech-to-text file.
+
+        A list of categories, can be provided as additional metadata.
+
+        S2S stores the raw speech-to-text, and creates an intermediate
+        representation for further editing.
+
+        A project id for further reference is returned.
+      operationId: project-create
+      consumes:
+        - multipart/form-data
+      parameters:
+        - in: formData
+          name: file
+          type: file
+          required: true
+          description: The speech-to-text file the project is created for.
+        - in: formData
+          name: categories
+          required: false
+          description: >-
+            List of categories the video/subtitle belongs to as comma-separated
+            strings.
+          type: array
+          collectionFormat: csv
+          items:
+            type: string
+      responses:
+        '200':
+          description: Newly created project id
+          schema:
+            $ref: '#/definitions/project-create-200'
+        '404':
+          description: Not found
+        '500':
+          description: Unexpected error
+    get:
+      tags:
+        - projects
+      summary: List all projects
+      description: |
+        Lists projects.
+        A listing of all project ids in the instance is returned.
+      operationId: project-list
+      responses:
+        '200':
+          description: List of project ids in the instance
+          schema:
+            type: array
+            items:
+              type: string
+              format: UUID
+              example: 5a4afee7-45e7-4978-b267-217595ec1d0f
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}':
+    get:
+      tags:
+        - projects
+      summary: Return subtitles for a project
+      description: >-
+        Subtitles for a project are exported in
+
+        - as json-subtitle-document (IJYI internal subtitle JSON format, see
+        models below).
+
+        - [WebVTT](https://www.w3.org/TR/webvtt1/),
+
+        - [EBU-TT](https://tech.ebu.ch/publications/tech3380),
+
+        - [IMSC1](https://www.w3.org/TR/ttml-imsc1.1/) (currently returns a
+        static dummy),
+
+        - [SRT (SubRip)](https://en.wikipedia.org/wiki/SubRip) (currently
+        returns a static dummy),
+
+
+        The different representations of the resource can be retrieved by
+        specifying the response content type.
+      operationId: project-get-subtitles
+      produces:
+        - application/json
+        - text/vtt
+        - application/ebutt+xml
+        - application/imsc1+xml
+        - application/x-subrip
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitles should be returned for
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: |-
+            Successful export of subtitles as file
+             - IJYI json-subtitle-document for application/json
+             - WebVTT for text/vtt
+             - EBU-TT for application/ebutt+xml
+             - IMSC-1 for application/imsc1+xml
+             - SRT (SubRip) for application/x-subrip
+          schema:
+            $ref: '#/definitions/json-subtitle-document'
+        '404':
+          description: 'Not Found. e.g., project id does not exist.'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/scores':
+    get:
+      tags:
+        - projects
+        - scores
+      summary: Return project scores
+      description: >-
+        For the overall subtitle file, the components that will create the
+        confidence score are:
+
+        -  Coverage 
+
+        -  Text Accuracy
+
+        -  Readability 
+
+        -  Layout
+      operationId: project-get-scores
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the scores should be returned for
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Project score values
+          schema:
+            $ref: '#/definitions/json-project-scores'
+        '404':
+          description: 'Not Found. e.g., project id does not exist.'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/archive':
+    post:
+      tags:
+        - projects
+      summary: Archive project
+      description: >-
+        Creates an archive of the projects database in the servers filesystem.
+        An archived project can later be restored.
+      operationId: project-archive
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project that should be archived
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '201':
+          description: Archive created.
+          schema:
+            $ref: '#/definitions/project-201-archive'
+        '404':
+          description: 'Not Found. e.g., project id does not exist.'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/restore':
+    post:
+      tags:
+        - projects
+      summary: Restore project
+      description: Restores a project from archive.
+      operationId: project-restore
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project that should be archived
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '201':
+          description: Archive restored.
+          schema:
+            $ref: '#/definitions/project-201-restore'
+        '404':
+          description: No backup exists for database e6860762-a8c4-40e5-bb40-e1fbf563b4f5
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}':
+    get:
+      tags:
+        - subtitles
+      summary: Retrieve existing subtitle
+      description: >-
+        Retrieves the content of a single, already existing, subtitle in a
+        project.
+
+        A successful call returns the subtitle object.
+      operationId: project-get-subtitle-by-id
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns JSON subtitle object.
+          schema:
+            $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '409':
+          description: 'Conflict. e.g., input does not validate.'
+          schema:
+            $ref: '#/definitions/status-409'
+        '500':
+          description: Unexpected error
+    put:
+      tags:
+        - subtitles
+      summary: Change/insert lines in subtitle
+      description: >-
+        Modifies (changes/creates) lines of an existing subtitle in a project.
+
+        Project and subtitle have to be referenced by their ID, which are to be
+        retrieved from JSON subtitle document (see `GET /projects/{projectID}`
+        with content type `application/json`).
+
+        Input is provided as json subtitle object, however, only the line values
+        (`lines[*].line`) are processed.
+
+        All other properties are ignored and are not part of the update. (**This
+        might change in the future!** *For instance, if timings are allowed to
+        be changed by clients.*)
+
+        Existing lines are replaced by new lines provided.
+
+        New ids are generated for the new lines.
+
+        Empty update lines are rejected.
+
+        A successful update returns the updated JSON subtitle object.
+
+        **To discuss:**
+
+        - Set score subtitleTextAccuracy to 100?
+      operationId: project-update-subtitle
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+        - name: subtitle
+          in: body
+          required: true
+          description: >-
+            Input for line updates. For convenience, it is provided as json
+            subtitle object. However, just the line values (`lines[*].line`) are
+            actually processed and expected to contain the new value for the new
+            lines. All other information is ignored. New lines will get a new
+            line id.
+          schema:
+            $ref: '#/definitions/json-subtitle-object'
+      responses:
+        '200':
+          description: |-
+            Success. Update of subtitle successful.
+            Returns the updated JSON subtitle object.
+          schema:
+            $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource (project/subtitle) can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '409':
+          description: >-
+            Conflict. e.g., line input does not contain a value to update the
+            existing line.
+          schema:
+            $ref: '#/definitions/status-409'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles':
+    get:
+      tags:
+        - subtitles
+      summary: Retrieve existing subtitle by point in time
+      description: >-
+        Retrieves the content of a single, already existing, subtitle in a
+        project.  The subtitle is located by its position in the video (timing).
+
+        Timing information can be provided in two formats:
+
+        - `hh:mm:ss.f (23:59:59.001)`
+
+        - `ss.f (3.113, 2.01, 7)`
+
+
+        As such a request with `/subtitles?time=00:01:13.01` is equal to
+        `/subtitles?time=73.01`
+
+
+        If no subtitle is found, the timing provided does not lie between the
+        beginning and end of of subtitle (begin <= timing <= end) an error
+        message is returned.
+      operationId: project-get-subtitle-by-time
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: time
+          in: query
+          description: point of time in video
+          required: true
+          type: string
+          format: 'hh:mm:ss.f or ss.f'
+      responses:
+        '200':
+          description: Success. Returns JSON subtitle object.
+          schema:
+            $ref: '#/definitions/json-subtitle-object'
+        '400':
+          description: Bad Request.
+          schema:
+            $ref: '#/definitions/status-400-time'
+        '404':
+          description: Not Found. The requested resource can not be found.
+          schema:
+            $ref: '#/definitions/status-404-time'
+        '409':
+          description: 'Conflict, e.g., input does not validate.'
+          schema:
+            $ref: '#/definitions/status-409'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/worstSubtitle':
+    get:
+      tags:
+        - scores
+        - subtitles
+      summary: Return subtitle with worst score
+      description: >-
+        Scans the project for the subtitle with the lowest subtitle score and
+        returns the first, if there are more than on having the same lowest
+        score.
+
+        **Notice**: 
+
+        - The subtitle with the internal lowest score is returned (so it will
+        always be the same subtitle). But since the scoring is not yet complete,
+        the score values in the returned json object will be replaced by random
+        scole values and as such change on each repeating API call.
+      operationId: project-get-worst-subtitle
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the scores should be returned for
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success.Returns JSON subtitle object.
+          schema:
+            $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: 'Not Found. e.g., project id does not exist.'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}/next':
+    get:
+      tags:
+        - subtitles
+      summary: Retrieve next subtitle relative to a given one
+      description: >-
+        Retrieves subtitle right after a subtitle identified by its subtitle id
+        or an empty object if the current subtitle is already the last one.
+      operationId: project-get-subtitle-next
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns JSON subtitle object.
+          schema:
+            $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}/previous':
+    get:
+      tags:
+        - subtitles
+      summary: Retrieve previous subtitle relative to a given one
+      description: >-
+        Retrieves subtitle right before a subtitle identified by its subtitle id
+        or an empty object if the current subtitle is already the first one.
+      operationId: project-get-subtitle-previous
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns JSON subtitle object.
+          schema:
+            $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}/firstWordToPrevious':
+    post:
+      tags:
+        - subtitles
+      summary: Move word to previous subtitle.
+      description: |-
+        Moves the first word of a subtitle to the end the previous subtitle.
+        Timings are adjusted.
+        A successful call returns the changed subtitle objects.
+      operationId: project-subtitle-first-word-to-previous
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns the changed subtitle objects.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}/lastWordToNext':
+    post:
+      tags:
+        - subtitles
+      summary: Move word to next subtitle.
+      description: |-
+        Moves the last word of a subtitle to the beginning of the next subtitle.
+        A successful call returns the changed subtitle objects.
+      operationId: project-subtitle-last-word-to-next
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns the changed subtitle objects.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}/mergeWithNext':
+    post:
+      tags:
+        - subtitles
+      summary: Merges subtitle with subsequent one.
+      description: >-
+        The current subtitle will be updated.  Its subtitle id will remain
+        stable.
+
+
+        The current subtitle changes its end time to the following subtitles end
+        time (i.e. including any gap between the subtitles.)
+
+
+        The resulting subtitle will have the same number of lines as the largest
+        number of lines in the two source subtitles... i.e. when merging a two
+        and a one line subtitle, the merged subtitle will have two lines.
+
+
+        The words from the two source subtitles will be spread evenly across the
+        lines in the result subtitle - merging two single line subtitles will
+        result in a two line subtitle with two lines, one from each source
+        subtitle in sequence.
+
+
+        Merging will occur even if the resulting subtitle has lines that are
+        over long... i.e. no test for fit.
+
+
+        A successful call returns the changed subtitle object and its new
+        subsequent one.
+      operationId: project-subtitle-merge-with-next
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns the updated subtitle and its new subsequent one.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}/split':
+    post:
+      tags:
+        - subtitles
+      summary: Splits subtitle.
+      description: >-
+        The current subtitle will be split. Its subtitle id remains stable. A
+        new subsequent subtitle will be created.
+
+
+        A subtitle that is empty will never be split.
+
+
+        If the original subtitle contains a single word then the newly created
+        subtitle is empty.
+
+
+        The sum duration of the two subtitles is the duration of the original.
+
+
+        The two subtitles will each contain half the text of the original split
+        at word boundaries.
+
+
+        If the number of words is odd, the first subtitle will contain one more
+        word than the second created subtitle.
+
+
+        The start time of the first subtitle is the start time of the original.
+        The end time of the second created subtitle is the end time of the
+        original subtitle.
+
+
+        A successful call returns the original updated subtitle object and its
+        new subsequent one.
+      operationId: project-subtitle-split
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns the updated subtitle and its new subsequent one.
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/json-subtitle-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '500':
+          description: Unexpected error
+  '/projects/{projectId}/subtitles/{subtitleId}/hal':
+    get:
+      tags:
+        - ids
+      summary: 'Get ids to previous, next, ... subtitles'
+      description: Returns various ids relative to subtitle.
+      operationId: get-subtitle-hal
+      produces:
+        - application/json
+      parameters:
+        - name: projectId
+          in: path
+          description: ID of project the subtitle belongs to
+          required: true
+          type: string
+          format: UUID
+        - name: subtitleId
+          in: path
+          description: ID of subtitle within the project
+          required: true
+          type: string
+          format: UUID
+      responses:
+        '200':
+          description: Success. Returns JSON subtitle object.
+          schema:
+            $ref: '#/definitions/hal-links-object'
+        '404':
+          description: Not Found. A requested resource/id can not be found.
+          schema:
+            $ref: '#/definitions/status-404'
+        '500':
+          description: Unexpected error
+definitions:
+  status-400-time:
+    properties:
+      code:
+        type: number
+        format: HTTP-status-code
+        example: 400
+      message:
+        type: string
+        format: Error message description
+        example: 'Wrong time format: ''abc'' (try e.g. ''23:59:59.999'').'
+  status-404:
+    properties:
+      code:
+        type: number
+        format: HTTP-status-code
+        example: 404
+      message:
+        type: string
+        format: Error message description
+        example: 'Subtitle not found: 5a4afee7-45e7-4978-b267-217595ec1d0fd'
+  status-404-time:
+    properties:
+      code:
+        type: number
+        format: HTTP-status-code
+        example: 404
+      message:
+        type: string
+        format: Error message description
+        example: 'No subtitle found at position: 01:01:12.01'
+  status-409:
+    properties:
+      code:
+        type: number
+        format: HTTP-status-code
+        example: 409
+      message:
+        type: string
+        format: Error message description
+        example: 'Input invalid: json-subtitle-object'
+  project-create-200:
+    properties:
+      id:
+        type: string
+        format: UUID
+        example: 5a4afee7-45e7-4978-b267-217595ec1d0f
+  project-201-archive:
+    properties:
+      code:
+        type: number
+        format: HTTP-status-code
+        example: 201
+      message:
+        type: string
+        format: Info message
+        example: >-
+          Created archive:
+          e6860762-a8c4-40e5-bb40-e1fbf563b4f5-2018-08-03-16-46-53.zip
+  project-201-restore:
+    properties:
+      code:
+        type: number
+        format: HTTP-status-code
+        example: 201
+      message:
+        type: string
+        format: Info message
+        example: Archive restored.
+      id:
+        type: string
+        format: UUID
+        example: e6860762-a8c4-40e5-bb40-e1fbf563b4f5
+  json-subtitle-document:
+    allOf:
+      - $ref: '#/definitions/json-project-id'
+      - $ref: '#/definitions/json-project-scores'
+      - $ref: '#/definitions/json-project-metadata'
+  json-project-id:
+    properties:
+      projectId:
+        type: string
+        format: UUID
+        example: 7ee687ba-4d71-4f2e-b320-8cbdc1170da4
+  json-project-scores:
+    properties:
+      projectScore:
+        description: >-
+          For the project as a whole, the overall score is expressed as the
+          worst value of the project level score values for Coverage, Text
+          Accuracy, Readability, and Layout.
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 13.01
+      projectCoverage:
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 47.31
+      projectTextAccuracy:
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 13.01
+      projectReadability:
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 80.123221
+      projectLayout:
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 17.7102
+  json-project-metadata:
+    properties:
+      videoLength:
+        type: number
+        format: time in seconds
+        example: 844
+      subtitles:
+        type: array
+        items:
+          $ref: '#/definitions/json-subtitle-object'
+  json-subtitle-object:
+    properties:
+      id:
+        type: string
+        format: UUID
+        example: f3be5009-9db0-4486-91ce-d77074fb250b
+      subtitleTextAccuracy:
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 13.01
+      subtitleReadability:
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 80.123221
+      subtitleLayout:
+        type: number
+        minimum: 0
+        maximum: 100
+        example: 17.7102
+      start:
+        type: number
+        format: time in seconds
+        example: 842.68
+      end:
+        type: number
+        format: time in seconds
+        example: 843.01
+      markedAsCorrect:
+        type: boolean
+        example: true
+      style:
+        type: object
+        properties:
+          fontFamily:
+            type: string
+            example: Arial Narrow
+          fontSize:
+            type: string
+            example: 12px
+          region:
+            type: string
+            enum:
+              - bottom
+              - middle
+              - top
+            example: bottom
+      lines:
+        type: array
+        items:
+          $ref: '#/definitions/json-line-object'
+  json-line-object:
+    properties:
+      id:
+        type: string
+        format: UUID
+        example: 14e5a3ae-6708-46cb-a190-3704e9c547ba
+      wordsCount:
+        type: integer
+        description: number of words in the following line
+        example: 7
+      line:
+        type: string
+        description: one line of text in the subtitle
+        example: one line of text in the subtitle
+  hal-object:
+    properties:
+      _links:
+        $ref: '#/definitions/hal-links-object'
+  hal-links-object:
+    properties:
+      self:
+        description: self reference
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+      firstSubtitle:
+        description: first subtitle of the video
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+      lastSubtitle:
+        description: last subtitle of the video
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+      previousSubtitle:
+        description: 'previous subtitle relative to self, empty if self is the first'
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+      nextSubtitle:
+        description: 'next subtitle relative to self, empty if self is the last'
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+      previousWorstSubtitle:
+        description: >-
+          previous subtitle relative to self with lowest score, empty if self is
+          the first
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+      nextWorstSubtitle:
+        description: >-
+          next subtitle relative to self with lowest score, empty if self is the
+          last
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+      worstSubtitle:
+        description: subtitle with lowest score from the beginning of the video
+        allOf:
+          - $ref: '#/definitions/hal-href-object'
+  hal-href-object:
+    properties:
+      href:
+        type: string
+        format: URL
+  json-subtitle-hal-object:
+    description: json-subtitle-object with additional hal links
+    allOf:
+      - $ref: '#/definitions/json-subtitle-object'
+      - $ref: '#/definitions/hal-object'

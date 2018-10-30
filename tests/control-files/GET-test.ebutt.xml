@@ -1,0 +1,644 @@
+<tt:tt xmlns:tt="http://www.w3.org/ns/ttml" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:sas="http://basex.io/sas" xml:lang="en" ttp:contentProfiles="http://www.w3.org/ns/ttml/profile/imsc1.1/text">
+  <tt:head>
+    <tt:metadata>
+      <ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
+        <ebuttm:conformsToStandard>urn:ebu:tt:distribution:2014-01</ebuttm:conformsToStandard>
+        <ebuttm:conformsToStandard>http://www.w3.org/ns/ttml/profile/imsc1/text</ebuttm:conformsToStandard>
+      </ebuttm:documentMetadata>
+    </tt:metadata>
+  </tt:head>
+  <tt:body>
+    <tt:div begin="00:00:01.200" end="00:00:06.960">
+      <tt:p>Today after two years of negotiations</tt:p>
+      <tt:p>the United States together with our international</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:06.960" end="00:00:12.960">
+      <tt:p>partners has achieved something that decades</tt:p>
+      <tt:p>of animosity has not a comprehensive</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:12.960" end="00:00:19.430">
+      <tt:p>long term deal with Iran that</tt:p>
+      <tt:p>will prevent it from obtaining a nuclear weapon.</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:19.440" end="00:00:24.000">
+      <tt:p>This deal demonstrates that American diplomacy can</tt:p>
+      <tt:p>bring about real and meaningful change</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:24.870" end="00:00:30.150">
+      <tt:p>change that makes our country and the world safer and</tt:p>
+      <tt:p>more secure. This deal is also</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:30.150" end="00:00:35.270">
+      <tt:p>in line with a tradition of American leadership</tt:p>
+      <tt:p>. It's now more than 50</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:35.270" end="00:00:40.880">
+      <tt:p>years since President Kennedy stood before the American</tt:p>
+      <tt:p>people and said Let us never negotiate</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:40.880" end="00:00:46.150">
+      <tt:p>out of fear but let us never fear to negotiate</tt:p>
+      <tt:p>. He was speaking then about</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:46.150" end="00:00:51.250">
+      <tt:p>the need for discussions between the United States and the Soviet</tt:p>
+      <tt:p>Union which led to efforts to restrict</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:51.640" end="00:00:56.910">
+      <tt:p>the spread of nuclear weapons. In those</tt:p>
+      <tt:p>days the risk was a catastrophic nuclear</tt:p>
+    </tt:div>
+    <tt:div begin="00:00:56.910" end="00:01:00.310">
+      <tt:p>war between two superpowers</tt:p>
+      <tt:p>in our time.</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:00.310" end="00:01:05.380">
+      <tt:p>The risk is that nuclear weapons will spread to</tt:p>
+      <tt:p>more and more countries particularly in</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:05.380" end="00:01:10.650">
+      <tt:p>the Middle East the most volatile region</tt:p>
+      <tt:p>in our world. Today</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:10.650" end="00:01:14.400">
+      <tt:p>.</tt:p>
+      <tt:p>Because America negotiated from a position</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:14.400" end="00:01:19.230">
+      <tt:p>of strength and principle. We</tt:p>
+      <tt:p>have stopped the spread of nuclear weapons in this</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:19.230" end="00:01:25.330">
+      <tt:p>region. Because of this deal</tt:p>
+      <tt:p>the international community will be able to verify</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:25.330" end="00:01:29.800">
+      <tt:p>.</tt:p>
+      <tt:p>That the Islamic Republic of Iran will not develop</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:29.170" end="00:01:35.800">
+      <tt:p>a nuclear weapon.</tt:p>
+      <tt:p>This deal meets every single one of the bottom lines</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:35.800" end="00:01:40.520">
+      <tt:p>that we established when we achieved a framework earlier</tt:p>
+      <tt:p>this spring. Every pathway</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:40.550" end="00:01:46.280">
+      <tt:p>to a nuclear weapon is cut off</tt:p>
+      <tt:p>and the inspection and transparency regime necessary</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:46.280" end="00:01:51.650">
+      <tt:p>to verify that objective. Will be put</tt:p>
+      <tt:p>in place. Because</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:51.650" end="00:01:56.810">
+      <tt:p>of this deal Iran will not produce the highly enriched</tt:p>
+      <tt:p>uranium and weapons grade plutonium that</tt:p>
+    </tt:div>
+    <tt:div begin="00:01:56.810" end="00:02:02.150">
+      <tt:p>form the raw materials necessary for a nuclear bomb</tt:p>
+      <tt:p>. Because of this deal</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:02.240" end="00:02:07.670">
+      <tt:p>Iran will remove two thirds of</tt:p>
+      <tt:p>its installed centrifuges the machines necessary</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:07.670" end="00:02:10.250">
+      <tt:p>to produce highly enriched uranium for a bomb</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:10.880" end="00:02:16.200">
+      <tt:p>And store them under constant international</tt:p>
+      <tt:p>supervision. Iran will not</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:16.200" end="00:02:21.990">
+      <tt:p>use its advanced centrifuges to produce enriched uranium</tt:p>
+      <tt:p>for the next decade. Iran will also</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:21.990" end="00:02:27.200">
+      <tt:p>get rid of 98 percent of its stockpile</tt:p>
+      <tt:p>of enriched uranium. To put</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:27.200" end="00:02:32.690">
+      <tt:p>that in perspective Iran currently has a stockpile</tt:p>
+      <tt:p>that could produce up to 10 nuclear weapons.</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:32.690" end="00:02:37.940">
+      <tt:p>Because of this deal that stockpile will be reduced</tt:p>
+      <tt:p>to a fraction of what would be required</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:37.940" end="00:02:42.910">
+      <tt:p>for a single weapon. This stockpile</tt:p>
+      <tt:p>limitation will last for 15 years.</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:44.500" end="00:02:49.690">
+      <tt:p>Because of this deal Iran will modify the</tt:p>
+      <tt:p>core of its reactor in Iraq. So that it</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:49.690" end="00:02:52.210">
+      <tt:p>will not produce weapons grade plutonium</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:52.810" end="00:02:58.300">
+      <tt:p>And it has agreed to ship the spent fuel from</tt:p>
+      <tt:p>the reactor out of the country for the lifetime of</tt:p>
+    </tt:div>
+    <tt:div begin="00:02:58.300" end="00:03:03.220">
+      <tt:p>the reactor for at least the</tt:p>
+      <tt:p>next 15 years. Iran will not build</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:03.370" end="00:03:09.720">
+      <tt:p>any new heavy water reactors.</tt:p>
+      <tt:p>Because of this deal we will for the first time be</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:09.720" end="00:03:13.560">
+      <tt:p>in a position to verify all of these commitments</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:13.560" end="00:03:18.900">
+      <tt:p>That means this deal is not built on trust.</tt:p>
+      <tt:p>It is built on verification.</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:19.800" end="00:03:23.670">
+      <tt:p>Inspectors will have 24/7 access</tt:p>
+      <tt:p>to Iran's key nuclear facilities.</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:24.680" end="00:03:29.810">
+      <tt:p>Iran will have access to Iran's entire nuclear</tt:p>
+      <tt:p>supply chain. Its uranium mines</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:29.810" end="00:03:35.300">
+      <tt:p>and mills its conversion facility</tt:p>
+      <tt:p>and its centrifuge manufacturing and storage</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:35.300" end="00:03:40.210">
+      <tt:p>facilities this ensures that</tt:p>
+      <tt:p>Iran will not be able to divert materials from known</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:40.210" end="00:03:45.310">
+      <tt:p>facilities to covert ones.</tt:p>
+      <tt:p>Some of these transparency measures will be in place</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:45.520" end="00:03:51.370">
+      <tt:p>for 25 years.</tt:p>
+      <tt:p>Because of this deal inspectors will also be able to access</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:51.460" end="00:03:56.920">
+      <tt:p>any suspicious location.</tt:p>
+      <tt:p>Put simply the organization responsible for the inspections</tt:p>
+    </tt:div>
+    <tt:div begin="00:03:56.920" end="00:04:00.280">
+      <tt:p>.</tt:p>
+      <tt:p>The IAEA will have access where</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:00.280" end="00:04:04.740">
+      <tt:p>necessary when necessary.</tt:p>
+      <tt:p>That arrangement is permanent.</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:05.870" end="00:04:11.300">
+      <tt:p>And the IAEA has also reached an agreement</tt:p>
+      <tt:p>with Iran to get access that it needs</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:11.360" end="00:04:16.570">
+      <tt:p>to complete its investigation into the possible military</tt:p>
+      <tt:p>dimensions of Iran's past nuclear research</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:16.570" end="00:04:21.970">
+      <tt:p>. Finally Iran is permanently</tt:p>
+      <tt:p>prohibited from pursuing a nuclear weapon under</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:21.970" end="00:04:27.520">
+      <tt:p>the Nuclear Non-Proliferation Treaty. Which</tt:p>
+      <tt:p>provided the basis for the international community's efforts</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:27.850" end="00:04:33.210">
+      <tt:p>to apply pressure on Iran.</tt:p>
+      <tt:p>As Iran takes steps to implement this deal</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:33.960" end="00:04:38.940">
+      <tt:p>it will receive relief from the sanctions that we put in place</tt:p>
+      <tt:p>because of Iran's nuclear program.</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:39.810" end="00:04:44.840">
+      <tt:p>Both America's own sanctions and sanctions imposed</tt:p>
+      <tt:p>by the United Nations Security Council.</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:45.730" end="00:04:51.170">
+      <tt:p>This relief will be phased in. Iran must</tt:p>
+      <tt:p>complete key nuclear steps before</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:51.170" end="00:04:56.210">
+      <tt:p>it begins to receive new sanctions relief.</tt:p>
+      <tt:p>And over the course of the next decade</tt:p>
+    </tt:div>
+    <tt:div begin="00:04:56.780" end="00:05:02.270">
+      <tt:p>Iran must abide by the deal</tt:p>
+      <tt:p>before additional sanctions are lifted including</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:02.270" end="00:05:07.640">
+      <tt:p>five years for restrictions related to arms</tt:p>
+      <tt:p>and eight years for restrictions related to ballistic</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:07.640" end="00:05:12.720">
+      <tt:p>missiles. All of this will</tt:p>
+      <tt:p>be memorialized and endorsed in a new</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:12.720" end="00:05:17.670">
+      <tt:p>United Nations Security Council resolution.</tt:p>
+      <tt:p>And if Iran violates the deal.</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:18.570" end="00:05:21.660">
+      <tt:p>All these sanctions will snap back into place</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:21.660" end="00:05:27.810">
+      <tt:p>So there's a very clear incentive for Iran to follow through.</tt:p>
+      <tt:p>And there are very real consequences for a violation</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:29.230" end="00:05:32.570">
+      <tt:p>.</tt:p>
+      <tt:p>That's the deal. It has the full backing</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:32.570" end="00:05:37.890">
+      <tt:p>of the international community. Congress</tt:p>
+      <tt:p>will now have an opportunity to review the details</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:38.100" end="00:05:42.960">
+      <tt:p>and my administration stands ready to provide extensive</tt:p>
+      <tt:p>briefings on how this will move forward.</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:44.350" end="00:05:49.630">
+      <tt:p>As the American people and Congress review the deal.</tt:p>
+      <tt:p>It will be important to consider the alternative</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:49.630" end="00:05:53.730">
+      <tt:p>. Consider what happens in a world</tt:p>
+      <tt:p>without this deal.</tt:p>
+    </tt:div>
+    <tt:div begin="00:05:55.540" end="00:06:00.700">
+      <tt:p>Without this deal there is no scenario where the world</tt:p>
+      <tt:p>joins us in sanctioning Iran until</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:00.700" end="00:06:06.160">
+      <tt:p>it completely dismantles its nuclear program</tt:p>
+      <tt:p>. Nothing we know about the Iranian government</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:06.160" end="00:06:08.950">
+      <tt:p>suggests that it would simply capitulate under that kind of pressure</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:09.790" end="00:06:14.200">
+      <tt:p>And the world would not support an effort to permanently</tt:p>
+      <tt:p>sanction Iran into submission.</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:15.160" end="00:06:19.870">
+      <tt:p>We put sanctions in place to get a diplomatic resolution</tt:p>
+      <tt:p>and that is what we have done.</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:21.550" end="00:06:26.200">
+      <tt:p>Without this deal there would be no agreed upon limitations</tt:p>
+      <tt:p>for the Iranian nuclear program</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:27.190" end="00:06:32.140">
+      <tt:p>Iran could produce operate and test more</tt:p>
+      <tt:p>and more centrifuges. Iran could</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:32.410" end="00:06:35.670">
+      <tt:p>fuel a reactor capable of producing plutonium</tt:p>
+      <tt:p>for a bomb.</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:35.830" end="00:06:41.270">
+      <tt:p>And we would not have any of the inspections that allow us</tt:p>
+      <tt:p>to detect a covert nuclear weapons program</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:41.270" end="00:06:46.310">
+      <tt:p>. In other words</tt:p>
+      <tt:p>no deal means no lasting constraints on</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:46.310" end="00:06:51.460">
+      <tt:p>Iran's nuclear program.</tt:p>
+      <tt:p>Such a scenario would make it more likely.</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:52.000" end="00:06:57.280">
+      <tt:p>That other countries in the region would feel compelled to pursue</tt:p>
+      <tt:p>their own nuclear programs threatening</tt:p>
+    </tt:div>
+    <tt:div begin="00:06:57.280" end="00:07:02.650">
+      <tt:p>a nuclear arms race in the most volatile region</tt:p>
+      <tt:p>of the world. It would also present</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:02.650" end="00:07:08.560">
+      <tt:p>the United States with fewer and less effective options</tt:p>
+      <tt:p>to prevent Iran from obtaining a nuclear</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:08.560" end="00:07:13.750">
+      <tt:p>weapon. I've</tt:p>
+      <tt:p>been president and commander in chief for over six</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:13.750" end="00:07:19.800">
+      <tt:p>years now. Time and again I have</tt:p>
+      <tt:p>faced decisions about whether or not to use military</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:19.800" end="00:07:23.170">
+      <tt:p>force. It's the gravest decision</tt:p>
+      <tt:p>that any president has to make.</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:25.300" end="00:07:30.370">
+      <tt:p>Many times in multiple countries</tt:p>
+      <tt:p>I have decided to use force and I will never</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:30.370" end="00:07:36.170">
+      <tt:p>hesitate to do so when it is in our national security</tt:p>
+      <tt:p>interest. I strongly</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:36.170" end="00:07:39.440">
+      <tt:p>believe that our national security interest</tt:p>
+      <tt:p>now.</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:39.830" end="00:07:45.200">
+      <tt:p>Depends upon preventing Iran from obtaining</tt:p>
+      <tt:p>a nuclear weapon. Which means that</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:45.290" end="00:07:50.470">
+      <tt:p>without a diplomatic resolution.</tt:p>
+      <tt:p>Either I or a future U.S. president.</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:51.100" end="00:07:56.830">
+      <tt:p>Would face a decision about whether or not to allow Iran</tt:p>
+      <tt:p>to obtain a nuclear weapon or whether to use</tt:p>
+    </tt:div>
+    <tt:div begin="00:07:56.830" end="00:08:03.170">
+      <tt:p>our military to stop.</tt:p>
+      <tt:p>Put simply no deal means a greater chance</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:03.260" end="00:08:09.680">
+      <tt:p>of more war in the Middle East.</tt:p>
+      <tt:p>Moreover we give nothing up by testing</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:09.680" end="00:08:14.650">
+      <tt:p>whether or not this problem can be solved peacefully</tt:p>
+      <tt:p>. If</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:14.980" end="00:08:20.890">
+      <tt:p>in a worst case scenario Iran violates the deal.</tt:p>
+      <tt:p>The same options that are available to me today will</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:20.890" end="00:08:26.180">
+      <tt:p>be available to any U.S. president in the future</tt:p>
+      <tt:p>. And I have no doubt that 10</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:26.180" end="00:08:31.880">
+      <tt:p>or 15 years from now the person who holds this office</tt:p>
+      <tt:p>will be in a far stronger position</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:32.540" end="00:08:37.670">
+      <tt:p>with Iran further away from a weapon.</tt:p>
+      <tt:p>And with the inspections and transparency that</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:37.700" end="00:08:43.000">
+      <tt:p>allow us to monitor the Iranian program</tt:p>
+      <tt:p>. For this reason</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:43.750" end="00:08:49.500">
+      <tt:p>I believe it would be irresponsible to</tt:p>
+      <tt:p>walk away from this deal. But</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:49.260" end="00:08:54.510">
+      <tt:p>on such a tough issue. It is important</tt:p>
+      <tt:p>that the American people and their representatives in Congress</tt:p>
+    </tt:div>
+    <tt:div begin="00:08:54.810" end="00:09:00.770">
+      <tt:p>get a full opportunity to review the deal.</tt:p>
+      <tt:p>After all the details matter. And we've</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:00.770" end="00:09:05.300">
+      <tt:p>had some of the finest nuclear scientists in the world</tt:p>
+      <tt:p>working through those details.</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:06.250" end="00:09:11.820">
+      <tt:p>And we're dealing with a country Iran that has</tt:p>
+      <tt:p>been a sworn adversary of the United States for over 35</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:11.830" end="00:09:17.350">
+      <tt:p>years. So I welcome</tt:p>
+      <tt:p>a robust debate in Congress on this issue and I welcome</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:17.350" end="00:09:23.910">
+      <tt:p>scrutiny of the details of this agreement.</tt:p>
+      <tt:p>But I will remind Congress that you don't make deals</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:23.910" end="00:09:29.320">
+      <tt:p>like this with your friends.</tt:p>
+      <tt:p>We negotiated arms control agreements with the Soviet Union</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:29.380" end="00:09:34.840">
+      <tt:p>when that nation was committed to our destruction.</tt:p>
+      <tt:p>And those agreements ultimately made us safer</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:35.610" end="00:09:38.700">
+      <tt:p>.</tt:p>
+      <tt:p>I am confident that this deal will meet the national</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:38.700" end="00:09:43.470">
+      <tt:p>security interests of the United States. And our</tt:p>
+      <tt:p>allies. So I will veto</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:43.860" end="00:09:48.180">
+      <tt:p>any legislation that prevents the successful</tt:p>
+      <tt:p>implementation of this deal.</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:50.250" end="00:09:55.320">
+      <tt:p>We do not have to accept an inevitable</tt:p>
+      <tt:p>spiral into conflict and we</tt:p>
+    </tt:div>
+    <tt:div begin="00:09:55.590" end="00:10:01.400">
+      <tt:p>certainly shouldn't seek it. And precisely</tt:p>
+      <tt:p>because the stakes are so high. This is not</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:01.400" end="00:10:07.170">
+      <tt:p>the time for politics or posturing.</tt:p>
+      <tt:p>Tough talk from Washington does not solve problems.</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:08.310" end="00:10:13.630">
+      <tt:p>Hardnosed diplomacy. Leadership</tt:p>
+      <tt:p>that has united the world's major powers.</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:14.410" end="00:10:18.910">
+      <tt:p>Offers a more effective way to verify that</tt:p>
+      <tt:p>Iran is not pursuing a nuclear weapon</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:20.590" end="00:10:21.430">
+      <tt:p>.</tt:p>
+      <tt:p>Now.</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:21.980" end="00:10:27.560">
+      <tt:p>That doesn't mean that this deal will resolve all of our differences</tt:p>
+      <tt:p>with Iran. We share</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:27.560" end="00:10:32.120">
+      <tt:p>the concerns expressed by many of our friends in the Middle</tt:p>
+      <tt:p>East including Israel and the Gulf states</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:32.690" end="00:10:37.420">
+      <tt:p>about Iran's support for terrorism and its use</tt:p>
+      <tt:p>of proxies to destabilize the region.</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:38.880" end="00:10:44.730">
+      <tt:p>But that is precisely why we are taking this step.</tt:p>
+      <tt:p>Because an Iran armed with a nuclear weapon would be far</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:44.730" end="00:10:48.960">
+      <tt:p>more destabilizing and far more dangerous</tt:p>
+      <tt:p>to our friends and to the world.</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:50.740" end="00:10:55.870">
+      <tt:p>Meanwhile we will maintain our own</tt:p>
+      <tt:p>sanctions related to Iran's support for terrorism</tt:p>
+    </tt:div>
+    <tt:div begin="00:10:55.990" end="00:10:59.110">
+      <tt:p>its ballistic missile program and its human rights violations</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:00.800" end="00:11:05.360">
+      <tt:p>We will continue our unprecedented efforts to</tt:p>
+      <tt:p>strengthen Israel's security. Efforts</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:05.360" end="00:11:10.440">
+      <tt:p>that go beyond what any American administration has</tt:p>
+      <tt:p>done before. And we will continue</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:10.440" end="00:11:16.560">
+      <tt:p>the work we began at Camp David to elevate our partnership</tt:p>
+      <tt:p>with the Gulf states to strengthen their capabilities</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:16.560" end="00:11:22.200">
+      <tt:p>to counter threats from Iran or terrorist groups</tt:p>
+      <tt:p>like ISIS. However</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:22.200" end="00:11:27.360">
+      <tt:p>I believe that we must continue to test whether</tt:p>
+      <tt:p>or not this region which has known</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:27.360" end="00:11:29.910">
+      <tt:p>so much suffering. So much bloodshed</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:30.750" end="00:11:36.870">
+      <tt:p>Can move in a different direction.</tt:p>
+      <tt:p>Time and again I have made clear to the Iranian people</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:37.200" end="00:11:42.680">
+      <tt:p>that we will always be open to engagement</tt:p>
+      <tt:p>on the basis of mutual interests and mutual respect</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:42.680" end="00:11:47.880">
+      <tt:p>. Our differences are real</tt:p>
+      <tt:p>. And the difficult history between our</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:47.880" end="00:11:52.480">
+      <tt:p>nations cannot be ignored.</tt:p>
+      <tt:p>But it is possible to change.</tt:p>
+    </tt:div>
+    <tt:div begin="00:11:53.770" end="00:12:00.250">
+      <tt:p>The path of violence and rigid ideology</tt:p>
+      <tt:p>a foreign policy based on threats to attack your neighbors</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:00.370" end="00:12:05.280">
+      <tt:p>or eradicate Israel. That's a dead</tt:p>
+      <tt:p>end. A different path.</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:05.850" end="00:12:08.820">
+      <tt:p>One of tolerance and peaceful resolution of conflict</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:09.660" end="00:12:12.420">
+      <tt:p>Leads to more integration into the global economy</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:13.800" end="00:12:18.420">
+      <tt:p>More engagement with the international community</tt:p>
+      <tt:p>and the ability of the Iranian people to prosper</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:18.540" end="00:12:24.140">
+      <tt:p>and thrive. This deal offers</tt:p>
+      <tt:p>an opportunity to move in a new direction</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:24.140" end="00:12:28.260">
+      <tt:p>. We should seize it</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:28.350" end="00:12:33.690">
+      <tt:p>We have come a long way to reach this point.</tt:p>
+      <tt:p>Decades of an Iranian nuclear program.</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:34.350" end="00:12:39.480">
+      <tt:p>Many years of sanctions and many months of</tt:p>
+      <tt:p>intense negotiation. Today</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:39.480" end="00:12:44.790">
+      <tt:p>I want to thank the members of Congress from both parties</tt:p>
+      <tt:p>who helped us put in place the sanctions that have proven</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:44.790" end="00:12:49.930">
+      <tt:p>so effective as well as the other countries</tt:p>
+      <tt:p>who joined us in that effort. I want to</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:49.930" end="00:12:53.200">
+      <tt:p>thank our negotiating partners. The United</tt:p>
+      <tt:p>Kingdom.</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:53.380" end="00:12:58.990">
+      <tt:p>France Germany Russia China</tt:p>
+      <tt:p>as well as the European Union for our unity in</tt:p>
+    </tt:div>
+    <tt:div begin="00:12:58.990" end="00:13:04.630">
+      <tt:p>this effort which showed that the world</tt:p>
+      <tt:p>can do remarkable things when we share a vision</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:04.660" end="00:13:10.300">
+      <tt:p>of peacefully addressing complex.</tt:p>
+      <tt:p>We showed what we can do when we do not split</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:10.360" end="00:13:16.210">
+      <tt:p>apart. And finally I want to thank</tt:p>
+      <tt:p>the American negotiating team. We had a team</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:16.210" end="00:13:21.690">
+      <tt:p>of experts working for several weeks straight</tt:p>
+      <tt:p>on this including our Secretary of Energy Ernie Moroni's</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:22.630" end="00:13:28.480">
+      <tt:p>and I want to particularly thank John Kerry</tt:p>
+      <tt:p>our secretary of state. Who began his service</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:28.630" end="00:13:33.640">
+      <tt:p>to this country more than four decades ago.</tt:p>
+      <tt:p>When he put on our uniform and went off to war.</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:34.880" end="00:13:40.700">
+      <tt:p>He's now making this country safer through his commitment to strong</tt:p>
+      <tt:p>principled American diplomacy.</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:42.130" end="00:13:47.260">
+      <tt:p>History shows that America must lead not just</tt:p>
+      <tt:p>with our might. But with our principles</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:48.000" end="00:13:51.390">
+      <tt:p>.</tt:p>
+      <tt:p>It shows we are stronger not when we are alone</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:51.420" end="00:13:55.200">
+      <tt:p>but when we bring the world together</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+    <tt:div begin="00:13:55.300" end="00:13:59.890">
+      <tt:p>Today's announcement marks one more chapter</tt:p>
+      <tt:p>in this pursuit. Of a safer.</tt:p>
+    </tt:div>
+    <tt:div begin="00:14:00.490" end="00:14:03.100">
+      <tt:p>And more helpful. More hopeful world</tt:p>
+      <tt:p>.</tt:p>
+    </tt:div>
+  </tt:body>
+</tt:tt>

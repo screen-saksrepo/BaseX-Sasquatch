@@ -1,0 +1,363 @@
+{
+  "job": {
+    "lang": "en-US", 
+    "user_id": 18595, 
+    "name": "audio.aac", 
+    "duration": 59, 
+    "created_at": "Wed Aug 29 11:01:51 2018", 
+    "id": 9161158
+  }, 
+  "speakers": [
+    {
+      "duration": "58.69", 
+      "confidence": null, 
+      "name": "UU", 
+      "time": "0.09"
+    }
+  ], 
+  "words": [
+    {
+      "duration": "0.15", 
+      "confidence": "1.000", 
+      "name": "What", 
+      "time": "0.09"
+    }, 
+    {
+      "duration": "0.06", 
+      "confidence": "1.000", 
+      "name": "a", 
+      "time": "0.24"
+    }, 
+    {
+      "duration": "0.30", 
+      "confidence": "1.000", 
+      "name": "great", 
+      "time": "0.30"
+    }, 
+    {
+      "duration": "0.33", 
+      "confidence": "1.000", 
+      "name": "honor", 
+      "time": "0.60"
+    }, 
+    {
+      "duration": "0.09", 
+      "confidence": "1.000", 
+      "name": "to", 
+      "time": "0.93"
+    }, 
+    {
+      "duration": "0.12", 
+      "confidence": "1.000", 
+      "name": "be", 
+      "time": "1.02"
+    }, 
+    {
+      "duration": "0.15", 
+      "confidence": "1.000", 
+      "name": "able", 
+      "time": "1.14"
+    }, 
+    {
+      "duration": "0.06", 
+      "confidence": "1.000", 
+      "name": "to", 
+      "time": "1.29"
+    }, 
+    {
+      "duration": "0.63", 
+      "confidence": "1.000", 
+      "name": "introduce", 
+      "time": "1.35"
+    }, 
+    {
+      "duration": "0.27", 
+      "confidence": "1.000", 
+      "name": "for", 
+      "time": "1.98"
+    }, 
+    {
+      "duration": "0.18", 
+      "confidence": "1.000", 
+      "name": "the", 
+      "time": "2.25"
+    }, 
+    {
+      "duration": "0.39", 
+      "confidence": "1.000", 
+      "name": "first", 
+      "time": "2.43"
+    }, 
+    {
+      "duration": "0.57", 
+      "confidence": "1.000", 
+      "name": "time", 
+      "time": "2.82"
+    }, 
+    {
+      "duration": "0.51", 
+      "confidence": "1.000", 
+      "name": "ever", 
+      "time": "3.51"
+    }, 
+    {
+      "duration": "0.62", 
+      "confidence": "0.990", 
+      "name": "anywhere", 
+      "time": "4.05"
+    }, 
+    {
+      "duration": "0.17", 
+      "confidence": "0.790", 
+      "name": "the", 
+      "time": "4.68"
+    }, 
+    {
+      "duration": "0.45", 
+      "confidence": "0.690", 
+      "name": "40", 
+      "time": "4.86"
+    }, 
+    {
+      "duration": "0.46", 
+      "confidence": "0.970", 
+      "name": "that", 
+      "time": "5.37"
+    }, 
+    {
+      "duration": "0.66", 
+      "confidence": "1.000", 
+      "name": "president", 
+      "time": "6.06"
+    }, 
+    {
+      "duration": "0.09", 
+      "confidence": "1.000", 
+      "name": "of", 
+      "time": "6.78"
+    }, 
+    {
+      "duration": "0.12", 
+      "confidence": "1.000", 
+      "name": "the", 
+      "time": "6.87"
+    }, 
+    {
+      "duration": "0.48", 
+      "confidence": "1.000", 
+      "name": "United", 
+      "time": "6.99"
+    }, 
+    {
+      "duration": "0.48", 
+      "confidence": "1.000", 
+      "name": "States", 
+      "time": "7.47"
+    }, 
+    {
+      "duration": "0.15", 
+      "confidence": "1.000", 
+      "name": "of", 
+      "time": "7.98"
+    }, 
+    {
+      "duration": "0.69", 
+      "confidence": "1.000", 
+      "name": "America", 
+      "time": "8.13"
+    }, 
+    {
+      "duration": "0.25", 
+      "confidence": "0.550", 
+      "name": ".", 
+      "time": "8.87"
+    }, 
+    {
+      "duration": "0.42", 
+      "confidence": "1.000", 
+      "name": "Donald", 
+      "time": "9.36"
+    }, 
+    {
+      "duration": "0.33", 
+      "confidence": "1.000", 
+      "name": "J", 
+      "time": "9.78"
+    }, 
+    {
+      "duration": "0.45", 
+      "confidence": "1.000", 
+      "name": "Trump", 
+      "time": "10.11"
+    }, 
+    {
+      "duration": "0.36", 
+      "confidence": "1.000", 
+      "name": "CHIEF", 
+      "time": "36.54"
+    }, 
+    {
+      "duration": "0.54", 
+      "confidence": "1.000", 
+      "name": "JUSTICE", 
+      "time": "36.90"
+    }, 
+    {
+      "duration": "0.69", 
+      "confidence": "1.000", 
+      "name": "ROBERTS", 
+      "time": "37.44"
+    }, 
+    {
+      "duration": "0.54", 
+      "confidence": "1.000", 
+      "name": "President", 
+      "time": "38.79"
+    }, 
+    {
+      "duration": "0.63", 
+      "confidence": "1.000", 
+      "name": "Carter", 
+      "time": "39.33"
+    }, 
+    {
+      "duration": "0.60", 
+      "confidence": "1.000", 
+      "name": "President", 
+      "time": "40.62"
+    }, 
+    {
+      "duration": "0.54", 
+      "confidence": "1.000", 
+      "name": "Clinton", 
+      "time": "41.22"
+    }, 
+    {
+      "duration": "0.63", 
+      "confidence": "1.000", 
+      "name": "President", 
+      "time": "42.45"
+    }, 
+    {
+      "duration": "0.60", 
+      "confidence": "1.000", 
+      "name": "Bush", 
+      "time": "43.08"
+    }, 
+    {
+      "duration": "0.66", 
+      "confidence": "1.000", 
+      "name": "President", 
+      "time": "44.34"
+    }, 
+    {
+      "duration": "0.66", 
+      "confidence": "0.990", 
+      "name": "Obama", 
+      "time": "45.00"
+    }, 
+    {
+      "duration": "0.39", 
+      "confidence": "1.000", 
+      "name": "fellow", 
+      "time": "46.29"
+    }, 
+    {
+      "duration": "0.87", 
+      "confidence": "1.000", 
+      "name": "Americans", 
+      "time": "46.68"
+    }, 
+    {
+      "duration": "0.21", 
+      "confidence": "1.000", 
+      "name": "and", 
+      "time": "48.15"
+    }, 
+    {
+      "duration": "0.93", 
+      "confidence": "1.000", 
+      "name": "people", 
+      "time": "48.36"
+    }, 
+    {
+      "duration": "0.18", 
+      "confidence": "1.000", 
+      "name": "of", 
+      "time": "49.38"
+    }, 
+    {
+      "duration": "0.12", 
+      "confidence": "1.000", 
+      "name": "the", 
+      "time": "49.56"
+    }, 
+    {
+      "duration": "0.75", 
+      "confidence": "1.000", 
+      "name": "world", 
+      "time": "49.68"
+    }, 
+    {
+      "duration": "0.13", 
+      "confidence": "0.850", 
+      "name": ".", 
+      "time": "50.43"
+    }, 
+    {
+      "duration": "0.36", 
+      "confidence": "1.000", 
+      "name": "Thank", 
+      "time": "50.67"
+    }, 
+    {
+      "duration": "0.24", 
+      "confidence": "1.000", 
+      "name": "you", 
+      "time": "51.03"
+    }, 
+    {
+      "duration": "0.06", 
+      "confidence": "0.670", 
+      "name": ".", 
+      "time": "56.27"
+    }, 
+    {
+      "duration": "0.39", 
+      "confidence": "1.000", 
+      "name": "We", 
+      "time": "56.86"
+    }, 
+    {
+      "duration": "0.15", 
+      "confidence": "1.000", 
+      "name": "the", 
+      "time": "57.25"
+    }, 
+    {
+      "duration": "0.60", 
+      "confidence": "1.000", 
+      "name": "citizens", 
+      "time": "57.40"
+    }, 
+    {
+      "duration": "0.12", 
+      "confidence": "1.000", 
+      "name": "of", 
+      "time": "58.00"
+    }, 
+    {
+      "duration": "0.66", 
+      "confidence": "1.000", 
+      "name": "America", 
+      "time": "58.12"
+    }, 
+    {
+      "duration": "0.00", 
+      "confidence": "1.000", 
+      "name": ".", 
+      "time": "58.78"
+    }
+  ], 
+  "format": "1.0"
+}

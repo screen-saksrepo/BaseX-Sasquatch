@@ -1,0 +1,401 @@
+{
+  "projectId": "34207f11-91b7-4b88-ae15-d57fe8fe3dab",
+  "projectScore": 0,
+  "projectCoverage": 60,
+  "projectTextAccuracy": 0,
+  "projectReadability": 0,
+  "projectLayout": 0,
+  "videoLength": 59,
+  "subtitles": [
+    {
+      "id": "3b3cf4a3-a521-4ba0-8ded-746c924ab590",
+      "markedAsCorrect": false,
+      "subtitleScore": 67,
+      "subtitleTextAccuracy": 69,
+      "subtitleReadability": 67,
+      "subtitleLayout": 81,
+      "start": 0.9,
+      "end": 5.83,
+      "lines": [
+        {
+          "id": "ac58dd85-4bc5-4062-9b79-97c2e61db269",
+          "wordsCount": 9,
+          "line": "What a great honor to be able to introduce"
+        },
+        {
+          "id": "ac58dd85-4bc5-4062-9b79-97c2e61db269",
+          "wordsCount": 9,
+          "line": "for the first time ever anywhere the 40 that"
+        }
+      ]
+    },
+    {
+      "id": "d63fa05d-d9ec-443b-9245-8be5a220af32",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 6.6,
+      "end": 9.7,
+      "lines": [
+        {
+          "id": "7e03016d-82c2-426b-8dee-68b06a107672",
+          "wordsCount": 3,
+          "line": "president of the"
+        },
+        {
+          "id": "7e03016d-82c2-426b-8dee-68b06a107672",
+          "wordsCount": 4,
+          "line": "United States of America."
+        }
+      ]
+    },
+    {
+      "id": "a40b0579-7447-422b-b167-4d9b0fdb7354",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 9.36,
+      "end": 10.56,
+      "lines": [
+        {
+          "id": "43a2a49f-ed8b-4281-a1f2-7e2ed0d6cce0",
+          "wordsCount": 3,
+          "line": "Donald J Trump"
+        }
+      ]
+    },
+    {
+      "id": "58b869e6-ee38-457f-8581-ba4f45d35aca",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 10.66,
+      "end": 14.79,
+      "lines": [
+        {
+          "id": "6fb46dd9-791e-4d19-b897-8d98726a5972",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "be70498e-5b43-4b37-90c2-ac0d06c7c83f",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "b9e91dbc-be7f-45ef-ab4b-667fd0223358",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 14.89,
+      "end": 19.12,
+      "lines": [
+        {
+          "id": "48299b39-ebe3-4e2f-bd2d-90a2d67b4604",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "fe96fa9e-3ac6-43e5-9d6a-57adfda10761",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "59200691-cc9a-4b73-aa48-0ce3a384af45",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 19.12,
+      "end": 23.45,
+      "lines": [
+        {
+          "id": "039ab600-703c-4f23-afb8-4a84161d5140",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "de261469-e60d-428a-bd94-f0ca74de6a5c",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "624183bc-3f57-4e69-a4b0-f874aa3a0bcb",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 23.35,
+      "end": 27.78,
+      "lines": [
+        {
+          "id": "788c97d9-fdcd-49a1-af2c-c0940f92a49f",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "722a3b98-f85a-4b72-a661-51aad1525a1d",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "563ddfe9-f24a-4237-924c-1ba1a9968618",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 27.58,
+      "end": 32.11,
+      "lines": [
+        {
+          "id": "3814faef-1c65-4ffb-812d-42fb00202f8b",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "b796deab-b84f-4d26-a83c-6d475e8d3e54",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "b5169962-b2c2-4bfb-97c9-14dd05095d60",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 31.81,
+      "end": 36.44,
+      "lines": [
+        {
+          "id": "d0574c4d-2acf-4511-9939-3e3d6934351c",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "fb64b1f2-712c-4836-bad9-a3b8e219e08e",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "8f8508d2-cf76-4004-a470-84e15ce79b2e",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 36.54,
+      "end": 38.13,
+      "lines": [
+        {
+          "id": "4852f7a1-cadc-4054-93af-9c73b518e78f",
+          "wordsCount": 3,
+          "line": "CHIEF JUSTICE ROBERTS"
+        }
+      ]
+    },
+    {
+      "id": "6a6cd9cc-ecc7-47ec-a3cc-6fed318ca314",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 38.79,
+      "end": 39.96,
+      "lines": [
+        {
+          "id": "0b18e90f-817e-4399-938c-43fa60bd96ef",
+          "wordsCount": 2,
+          "line": "President Carter"
+        }
+      ]
+    },
+    {
+      "id": "9bce9dae-6ba6-451e-83da-542d6464dfa5",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 40.62,
+      "end": 41.76,
+      "lines": [
+        {
+          "id": "6d6bbe69-3873-4627-b784-010861c5b0f3",
+          "wordsCount": 2,
+          "line": "President Clinton"
+        }
+      ]
+    },
+    {
+      "id": "c96b9144-b1f5-489f-843b-5ca852778580",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 42.45,
+      "end": 43.68,
+      "lines": [
+        {
+          "id": "8fe5a40f-fee6-498e-b91f-f3c712e95255",
+          "wordsCount": 2,
+          "line": "President Bush"
+        }
+      ]
+    },
+    {
+      "id": "9521a31e-2ea3-4c77-864a-b45651bd15c4",
+      "markedAsCorrect": false,
+      "subtitleScore": 99,
+      "subtitleTextAccuracy": 99,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 44.34,
+      "end": 45.66,
+      "lines": [
+        {
+          "id": "545df4b0-447f-45b6-979e-94af8ef256de",
+          "wordsCount": 2,
+          "line": "President Obama"
+        }
+      ]
+    },
+    {
+      "id": "37d66820-51f4-4d57-8709-e7a490b85907",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 46.29,
+      "end": 47.55,
+      "lines": [
+        {
+          "id": "ad298574-5a99-46cc-8b6f-d9eab140e06e",
+          "wordsCount": 2,
+          "line": "fellow Americans"
+        }
+      ]
+    },
+    {
+      "id": "fd64df89-3050-449d-aa6f-e7a5fba27a4e",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 48.15,
+      "end": 49.29,
+      "lines": [
+        {
+          "id": "dbb5843c-28cd-4ed6-9ca8-f4d437d6e949",
+          "wordsCount": 2,
+          "line": "and people"
+        }
+      ]
+    },
+    {
+      "id": "50e10726-9a1e-4556-b414-6a292e4b3447",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 49.38,
+      "end": 51.33,
+      "lines": [
+        {
+          "id": "0fa7405e-33d8-4998-b7bd-c8022d7c80d1",
+          "wordsCount": 5,
+          "line": "of the world. Thank you."
+        }
+      ]
+    },
+    {
+      "id": "90b7be10-48de-40ac-8da8-4cd0cc7b7c1d",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 51.43,
+      "end": 53.995,
+      "lines": [
+        {
+          "id": "1074d5ba-3746-4104-a380-498e507ee219",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "29c51571-2a83-4dc6-86ba-5e10c0df8180",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "c26de757-e1b3-4f39-97fb-501bf7e18ea1",
+      "markedAsCorrect": false,
+      "subtitleScore": 0,
+      "subtitleTextAccuracy": 0,
+      "subtitleReadability": 0,
+      "subtitleLayout": 0,
+      "start": 54.095,
+      "end": 56.76,
+      "lines": [
+        {
+          "id": "e6b1f6fb-b08c-4afc-92b2-845c872c8b4a",
+          "wordsCount": 0,
+          "line": ""
+        },
+        {
+          "id": "18d3b35d-bdc8-49f7-9fe2-ca42ff0a0594",
+          "wordsCount": 0,
+          "line": ""
+        }
+      ]
+    },
+    {
+      "id": "53cb46c2-228c-4d84-b5e3-56344a1095a2",
+      "markedAsCorrect": false,
+      "subtitleScore": 100,
+      "subtitleTextAccuracy": 100,
+      "subtitleReadability": 100,
+      "subtitleLayout": 100,
+      "start": 56.86,
+      "end": 58.78,
+      "lines": [
+        {
+          "id": "b383aa16-4057-4b5b-bb27-54845da5571e",
+          "wordsCount": 5,
+          "line": "We the citizens of America."
+        }
+      ]
+    }
+  ]
+}

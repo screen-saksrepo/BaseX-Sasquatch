@@ -1,0 +1,6 @@
+/.logs
+/.basex
+/.basexgui
+swagger.json.orig
+/data
+.DS_Store

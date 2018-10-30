@@ -1,0 +1,27 @@
+{
+  "id":,
+  "markedAsCorrect":true,
+  "subtitleScore":,
+  "subtitleTextAccuracy":,
+  "subtitleReadability":,
+  "subtitleLayout":,
+  "start":842.68,
+  "end":843.01,
+  "lines":[
+    {
+      "id":,
+      "wordsCount":2,
+      "line":"a b"
+    },
+    {
+      "id":,
+      "wordsCount":1,
+      "line":"z"
+    }
+  ],
+  "style":{
+    "region":"bottom",
+    "fontFamily":"Arial Narrow",
+    "fontSize":"12px"
+  }
+}

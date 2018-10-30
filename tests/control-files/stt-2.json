@@ -1,0 +1,51 @@
+{
+  "job": {
+    "lang": "en-US",
+    "user_id": 18595,
+    "name": "video.mp4",
+    "duration": 844,
+    "created_at": "Mon Dec 11 10:51:25 2017",
+    "id": 5769552
+  },
+  "speakers": [
+    {
+      "duration": "328.52",
+      "confidence": null,
+      "name": "M1",
+      "time": "1.02"
+    },
+    {
+      "duration": "1.58",
+      "confidence": null,
+      "name": "M4",
+      "time": "329.71"
+    }
+  ],
+  "words": [
+    {
+      "duration": "0.66",
+      "confidence": "1.000",
+      "name": "Today",
+      "time": "1.02"
+    },
+    {
+      "duration": "0.27",
+      "confidence": "1.000",
+      "name": "AT&T",
+      "time": "2.13"
+    },
+    {
+      "duration": "0.27",
+      "confidence": "1.000",
+      "name": "Love<3",
+      "time": "2.83"
+    },
+    {
+      "duration": "0.27",
+      "confidence": "1.000",
+      "name": "Paused",
+      "time": "16.83"
+    }
+  ],
+  "format": "1.0"
+}

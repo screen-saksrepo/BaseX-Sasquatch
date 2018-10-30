@@ -1,0 +1,36 @@
+<sasquatch xmlns:sas="http://basex.io/sas">
+  <meta>
+    <id>foo</id>
+    <categories/>
+    <created/>
+    <modified/>
+    <origin>
+      <job type="object">
+        <lang>en-US</lang>
+        <user__id type="number">18595</user__id>
+        <name>video.mp4</name>
+        <duration type="number">844</duration>
+        <created__at>Mon Dec 11 10:51:25 2017</created__at>
+        <id type="number">5769552</id>
+      </job>
+    </origin>
+  </meta>
+  <tt:tt xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:tt="http://www.w3.org/ns/ttml" xml:lang="en" ttp:contentProfiles="http://www.w3.org/ns/ttml/profile/imsc1.1/text">
+    <tt:head>
+      <tt:metadata>
+        <ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
+          <ebuttm:conformsToStandard>urn:ebu:tt:distribution:2014-01</ebuttm:conformsToStandard>
+          <ebuttm:conformsToStandard>http://www.w3.org/ns/ttml/profile/imsc1/text</ebuttm:conformsToStandard>
+        </ebuttm:documentMetadata>
+      </tt:metadata>
+    </tt:head>
+    <tt:body>
+      <tt:div sas:id="dd754ba9-b613-4d79-b73d-7c3d245cf7e9" sas:subtitleScore="100" begin="00:00:01.020" end="00:00:01.680">
+        <tt:p sas:id="268ae2c5-95c2-4593-83ff-83af62ebfbf9" sas:confidence="100">Today</tt:p>
+      </tt:div>
+      <tt:div sas:id="079e3dc8-f803-4d7d-99b8-10dffe3ac6b7" sas:subtitleScore="100" begin="00:00:02.130" end="00:00:03.100">
+        <tt:p sas:id="fd05162e-3926-41a3-abec-73809ad3fcda" sas:confidence="100">AT&amp;T Love&lt;3</tt:p>
+      </tt:div>
+    </tt:body>
+  </tt:tt>
+</sasquatch>
